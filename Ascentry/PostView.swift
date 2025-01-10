@@ -12,7 +12,6 @@ struct PostView: View {
         ZStack{
             Color.pink
             Text("投稿画面")
-            Text("楽しい")
         }
     }
 }
