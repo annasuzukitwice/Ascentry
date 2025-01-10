@@ -14,6 +14,9 @@
 		719074962CF9D3960088331F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719074952CF9D3960088331F /* MapView.swift */; };
 		719074982CF9D3B50088331F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719074972CF9D3B50088331F /* SearchView.swift */; };
 		7190749A2CF9D3C60088331F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719074992CF9D3C60088331F /* PostView.swift */; };
+		7190749C2D3128430088331F /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190749B2D3128430088331F /* UserView.swift */; };
+		7190749E2D31285F0088331F /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190749D2D31285F0088331F /* RecordView.swift */; };
+		719074A02D3128900088331F /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190749F2D3128900088331F /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		719074952CF9D3960088331F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		719074972CF9D3B50088331F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		719074992CF9D3C60088331F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		7190749B2D3128430088331F /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		7190749D2D31285F0088331F /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		7190749F2D3128900088331F /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				719074952CF9D3960088331F /* MapView.swift */,
 				719074972CF9D3B50088331F /* SearchView.swift */,
 				719074992CF9D3C60088331F /* PostView.swift */,
+				7190749B2D3128430088331F /* UserView.swift */,
+				7190749D2D31285F0088331F /* RecordView.swift */,
+				7190749F2D3128900088331F /* PlayView.swift */,
 				7190748B2CF9D29A0088331F /* Assets.xcassets */,
 				7190748D2CF9D29A0088331F /* Preview Content */,
 			);
@@ -147,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				719074982CF9D3B50088331F /* SearchView.swift in Sources */,
+				7190749C2D3128430088331F /* UserView.swift in Sources */,
+				719074A02D3128900088331F /* PlayView.swift in Sources */,
 				7190748A2CF9D2970088331F /* ContentView.swift in Sources */,
+				7190749E2D31285F0088331F /* RecordView.swift in Sources */,
 				719074962CF9D3960088331F /* MapView.swift in Sources */,
 				7190749A2CF9D3C60088331F /* PostView.swift in Sources */,
 				719074882CF9D2970088331F /* AscentryApp.swift in Sources */,
