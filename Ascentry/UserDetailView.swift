@@ -11,7 +11,8 @@ import SwiftUI
 struct UserDetailView: View {
     @State private var userInput: String = ""
     @State private var userInput2: String = ""
-    @State private var selectedView: ViewType = .first
+    @State private var isCancelled: Bool = false
+    
     
     var body: some View {
         ZStack {
@@ -59,6 +60,7 @@ struct UserDetailView: View {
                         .padding(.top, 20)  // ユーザーアイコンと少し間隔をあける
                         .foregroundColor(.black)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.asciiCapable)
                     
                     Image("Edit2")
                         .resizable()
@@ -90,26 +92,23 @@ struct UserDetailView: View {
         VStack {
             // 横並びのボタン
             HStack {
-                Button(action: {
-                    selectedView = .first
-                }) {
-                    Text("✔︎")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.white)
-                        .foregroundColor(.black)
-                        .cornerRadius(8)
-                }
                 
-                Button(action: {
-                    selectedView = .second
-                }) {
+                NavigationLink(destination: UserView()) {
                     Text("×")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(8)
+                }
+                NavigationLink(destination: UserView()) {
+                    Text("✔︎")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(8)
+                    
                 }
             }
         }
