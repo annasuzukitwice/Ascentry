@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Firefly 幾何学的な模様。音楽のレコードや録音用マイクなどのイラストが規則正しく配置されている。レコードは三枚がまばらに配置され、マイクは画面下の中央部に配置する。無機質なモノトーンを基調にした.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
