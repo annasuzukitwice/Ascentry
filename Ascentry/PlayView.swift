@@ -11,7 +11,24 @@ struct PlayView: View {
     var body: some View {
         ZStack{
             Color.gray
-            Text("再生画面")
+            HStack {
+                Button {
+                    print("前")
+                } label: {
+                    Image("reverse")
+                }
+                Button {
+                    print("再生")
+                } label: {
+                    Image("Play")
+                }
+                Button {
+                    print("次")
+                } label: {
+                    Image("forward")
+                }
+
+            }
         }
     }
 }

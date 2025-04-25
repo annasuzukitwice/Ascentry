@@ -93,6 +93,19 @@ struct UserDetailView: View {
             // 横並びのボタン
             HStack {
                 
+                Button(action: {
+                        userInput = ""
+                        userInput2 = ""
+                        isCancelled = true
+                    }) {
+                        Text("×")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+
                 NavigationLink(destination: UserView()) {
                     Text("×")
                         .padding()
