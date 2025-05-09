@@ -21,11 +21,20 @@ struct UserDetailView: View {
                 .ignoresSafeArea()
             
             VStack {
-                
-                Image("Usericon")
-                    .resizable()
-                    .frame(width: 230.0, height: 230)
-                    .scaledToFill()
+                ZStack(alignment: .bottomTrailing) {
+                    Image("Usericon")
+                        .resizable()
+                        .frame(width: 230.0, height: 230)
+                        .scaledToFill()
+                    
+                    Button {
+                        print("image-edit")
+                    } label: {
+                        Image("Camera") // 小さな画像
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                    }
+                }
                 
                 HStack {
                     
@@ -85,6 +94,7 @@ struct UserDetailView: View {
                         .resizable()
                         .frame(width: 40, height: 40)
                 }
+                .padding(.bottom, 60)
             }
             .navigationTitle("User2")  // 次の画面のタイトル
         }
@@ -94,22 +104,22 @@ struct UserDetailView: View {
             HStack {
                 
                 Button(action: {
-                        userInput = ""
-                        userInput2 = ""
-                        isCancelled = true
-                    }) {
-                        Text("×")
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.black)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                    }
+                    userInput = ""
+                    userInput2 = ""
+                    isCancelled = true
+                }) {
+                    Text("×")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
                 NavigationLink(destination: UserView()) {
                     Text("✔︎")
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(Color.purple)
                         .foregroundColor(.black)
                         .cornerRadius(8)
                     
@@ -142,6 +152,6 @@ struct SecondView: View {
     }
 }
 
-    #Preview {
-        UserDetailView()
-    }
+#Preview {
+    UserDetailView()
+}
