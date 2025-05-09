@@ -105,15 +105,6 @@ struct UserDetailView: View {
                             .foregroundColor(.white)
                             .cornerRadius(8)
                     }
-
-                NavigationLink(destination: UserView()) {
-                    Text("×")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
                 NavigationLink(destination: UserView()) {
                     Text("✔︎")
                         .padding()

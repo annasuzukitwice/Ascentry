@@ -10,6 +10,7 @@ import SwiftUI
 struct PlayView: View {
     @State private var message: String = "location"
     @State private var message2: String = "username"
+    @State private var message3: String = "title"
     
     var body: some View {
         ZStack{
@@ -18,11 +19,12 @@ struct PlayView: View {
             
                 HStack {
                     Image("usericon 1")
-                        .frame(width: 30, height: 30)
+                        .frame(width: 28, height: 28)
                         .padding()
                     Text(message2)
                         .foregroundColor(.white)
                         .padding(.trailing, 120)
+                        .font(.system(size: 20))
                     Image("setting")
                 }
                 .padding(.bottom, 10)
@@ -35,6 +37,12 @@ struct PlayView: View {
                         .frame(width: 335, height: 335)
                 }
                 .padding(.bottom, 10)
+                
+                Text(message3)
+                    .foregroundColor(.white)
+                    .padding(.trailing, 300)
+                    .font(.system(size: 30))
+                
                 HStack {
                     Image("Pin1")
                     
@@ -52,7 +60,7 @@ struct PlayView: View {
                         Image("Favourite")
                     }
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 10)
                 
                 ZStack {
                     Rectangle()
@@ -65,9 +73,9 @@ struct PlayView: View {
                             .resizable()
                             .frame(width: 10, height: 10)
                     }
-                    
-                    .padding(.bottom, 30)
                 }
+                
+                .padding(.bottom, 20)
                 
                 HStack(spacing: 70) {
                     Button {
@@ -95,9 +103,19 @@ struct PlayView: View {
                     } label: {
                         Image("Volumemute")
                     }
-                    Rectangle()
-                        .fill(Color.white)
-                        .frame(width: 290, height: 1)
+                    
+                    ZStack {
+                        Rectangle()
+                            .fill(Color.white)
+                            .frame(width: 290, height: 1)
+                        Button {
+                            print("音量調節")
+                        } label: {
+                            Image("playbutton")
+                                .resizable()
+                                .frame(width: 10, height: 10)
+                        }
+                    }
                     Button {
                         print("音量大")
                     } label: {
@@ -105,6 +123,35 @@ struct PlayView: View {
                     }
                 }
                 .padding(.bottom, 30)
+                
+                HStack(spacing: 42) {
+                    Button {
+                        print("tableview")
+                    }label: {
+                        Image("map")
+                    }
+                    Button {
+                        print("tableview")
+                    }label: {
+                        Image("search")
+                    }
+                    Button {
+                        print("tableview")
+                    }label: {
+                        Image("microphone")
+                    }
+                    Button {
+                        print("tableview")
+                    }label: {
+                        Image("headphone")
+                    }
+                    Button {
+                        print("tableview")
+                    }label: {
+                        Image("subtitle")
+                    }
+                }
+                .padding(.bottom, 10)
             }
         }
     }
