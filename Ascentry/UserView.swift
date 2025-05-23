@@ -24,6 +24,11 @@ struct UserView: View {
 
                     VStack {
                         HStack {
+                            Image("back")
+                                .padding(.leading, 20)
+                                .padding(.top, 10)
+                                .scaledToFill()
+                                .frame(width: 40, height: 40)
                             Spacer()
                             NavigationLink(destination: UserDetailView()) {
                                 Image("Edit")
@@ -179,6 +184,7 @@ struct UserView: View {
                         }
                     }
                 }
+                .padding(.bottom, 30)
             }
             .background(Color.black)
             
